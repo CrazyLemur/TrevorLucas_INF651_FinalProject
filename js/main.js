@@ -439,7 +439,7 @@ async function refreshPosts(postsData) {
     const fragment = await displayPosts(postsData);
 
     // call addButtonListeners
-    const addButtons = addButtonListeners(fragment);
+    const addButtons = addButtonListeners();
 
     // return array
     return [removeButtons, main, fragment, addButtons];
